@@ -1,8 +1,10 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
 export default defineConfig({
-    plugins: [react()],
-    server: {
-      host: '0.0.0.0',  // Ini agar aplikasi bisa diakses dari semua alamat
-      port: 5173,        // Port default
-    },
-  });
-  
+  plugins: [react()],
+  server: {
+    host: '0.0.0.0', // Agar aplikasi bisa diakses dari luar
+    port: 5173,
+  },
+});
